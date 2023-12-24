@@ -1,0 +1,4 @@
+username,firstName,lastName,email,password,phone,userStatus
+Test,Test1,Test1,test1@ukr.net,topsecret,+380670000000,1
+Test,Test2,Test2,test2@ukr.net,topsecret,+380670000000,1
+Test,Test3,Test3,test3@ukr.net,topsecret,+380670000000,0
