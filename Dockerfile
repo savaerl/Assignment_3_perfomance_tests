@@ -7,6 +7,7 @@ ENV workdir="/tmp"
 # The folder for keeping the results file
 ENV results_dir="results"
 
+ENTRYPOINT ["bash", "./install_jmeter.sh"]
 # copying files for Jmeter along with the test plan
 COPY jmeter/ ${workdir}/jmeter
 COPY users_cud.jmx users.sh users.csv ${workdir}/
@@ -14,5 +15,4 @@ COPY users_cud.jmx users.sh users.csv ${workdir}/
 # Set the working directory to use when running the container
 WORKDIR ${workdir}
 
-# Command to run when the container starts
 ENTRYPOINT ["bash", "./users.sh"]

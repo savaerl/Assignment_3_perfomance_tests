@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# download and install Apache JMeter
+JMETER_FOLDER=jmeter
+if [ -f "JMETER_FOLDER" ]; then
+    echo "Jmeter already exists."
+else
+   echo "Jmeter has not installed yet."
+   sh install_jmeter.sh
+fi
 # initiate the working directory
 workdir=${workdir:-/tmp}
 echo "Working directory is ${workdir}"
